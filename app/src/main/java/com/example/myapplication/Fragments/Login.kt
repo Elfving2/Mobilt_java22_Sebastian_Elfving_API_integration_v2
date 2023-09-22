@@ -34,7 +34,7 @@ class Login : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
-        val url = "http://192.168.2.139:8080/databaseConnection/login.php"
+        val url = "http://192.168.39.147:8080/databaseConnection/login.php"
 
         val loginButton = view.findViewById<Button>(R.id.loginButton)
 

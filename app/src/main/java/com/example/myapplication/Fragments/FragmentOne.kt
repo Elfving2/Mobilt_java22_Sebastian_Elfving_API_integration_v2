@@ -50,8 +50,8 @@ class FragmentOne : Fragment() {
     fun displayCharacter(response : String, view : View?) {
         val jsonObject = JSONObject(response)
         val imageView = view?.findViewById<ImageView>(R.id.imageView);
-        var nameText = view?.findViewById<TextView>(R.id.textName)
-        var jutsuText = view?.findViewById<TextView>(R.id.textJutsu)
+        val nameText = view?.findViewById<TextView>(R.id.textName)
+        val jutsuText = view?.findViewById<TextView>(R.id.textJutsu)
 
         nameText?.text = jsonObject.getString("name")
         Log.d("re", jsonObject.getString("name"))

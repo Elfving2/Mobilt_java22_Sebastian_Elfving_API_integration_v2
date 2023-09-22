@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.FragmentActivity
@@ -33,6 +34,12 @@ class loggedInActivity : FragmentActivity() {
             )
             transaction.addToBackStack(null)
             transaction.commit()
+        }
+
+        val logOutButton = findViewById<Button>(R.id.logOut)
+        logOutButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
             // Create a JsonObjectRequest to retrieve a JSON object
